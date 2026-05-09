@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Presente — Una nueva forma de regalar · México</title>
+<meta name="description" content="Plataforma de regalos experienciales. Brunch, cocktails, spa, sound healing y más. Curado en México. Desde $235 MXN." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"><span class="cursor__text" id="cursorText"></span></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- AURORA — gradiente cálido que sigue al mouse -->
+<div class="aurora" id="aurora"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav__brand">
+    <span class="nav__brand-mark">Presente.</span>
+  </a>
+  <div class="nav__links">
+    <a href="#experiencias">Experiencias</a>
+    <a href="#categorias">Categorías</a>
+    <a href="#proceso">Cómo funciona</a>
+  </div>
+  <a href="#contacto" class="nav__cta" data-magnetic>
+    Regala
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__inner">
+    <div class="hero__intro">
+      <span class="eyebrow">
+        <span class="eyebrow__dot"></span>
+        Edición Día de las Madres · México
+      </span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line"><span class="word">Una</span> <span class="word">nueva</span></span>
+      <span class="line"><span class="word">forma</span> <span class="word">de</span></span>
+      <span class="line"><span class="word"><em>regalar</em></span><span class="period">.</span></span>
+    </h1>
+
+    <p class="hero__sub">
+      No otra cosa que se acumula en el cajón.
+      Regala una <strong>cena</strong>, un <strong>masaje</strong>, una <strong>cata de vinos</strong>.
+      Algo que se viva, no que se guarde.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#experiencias" class="btn btn--primary" data-magnetic>
+        Explorar experiencias
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#proceso" class="btn btn--ghost" data-magnetic>Cómo funciona</a>
+    </div>
+
+    <!-- Cards flotando con parallax al mouse -->
+    <div class="hero__cards" id="heroCards">
+      <div class="float-card float-card--1" data-depth="1.4">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/28_ed029523-0449-4467-bc6c-b91d7842f3b7.png" alt="" loading="lazy" />
+        <span class="float-card__tag">Cocktails · Dubai Lover</span>
+      </div>
+      <div class="float-card float-card--2" data-depth="0.6">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/78.png?v=1767841119" alt="" loading="lazy" />
+        <span class="float-card__tag">Brunch · $600</span>
+      </div>
+      <div class="float-card float-card--3" data-depth="1.0">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/SanandaMothersday.png" alt="" loading="lazy" />
+        <span class="float-card__tag">Sound Healing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"><span></span></div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<section class="strip">
+  <div class="strip__row">
+    <div class="strip__item"><em class="strip__num" data-target="100">0</em><span class="strip__plus">+</span><span class="strip__label">Experiencias curadas</span></div>
+    <div class="strip__item"><em class="strip__num" data-target="18">0</em><span class="strip__label">Marcas aliadas</span></div>
+    <div class="strip__item"><em class="strip__num" data-target="235">0</em><span class="strip__label">Desde $235 MXN</span></div>
+    <div class="strip__item"><em class="strip__num" data-target="48">0</em><span class="strip__plus">h</span><span class="strip__label">Activación rápida</span></div>
+  </div>
+</section>
+
+<!-- MANIFIESTO -->
+<section class="manifesto">
+  <p class="manifesto__text">
+    <span class="rw">Regalar</span> <span class="rw">no</span> <span class="rw">es</span>
+    <span class="rw">comprar</span> <span class="rw">una</span> <span class="rw">cosa.</span>
+    <span class="rw">Es</span> <span class="rw rw--accent">crear</span> <span class="rw rw--accent">una</span> <span class="rw rw--accent">tarde,</span>
+    <span class="rw">una</span> <span class="rw">conversación,</span>
+    <span class="rw">un</span> <span class="rw">recuerdo<span class="period">.</span></span>
+  </p>
+</section>
+
+<!-- CATEGORÍAS -->
+<section class="categories" id="categorias">
+  <header class="section-head">
+    <div>
+      <span class="section-head__num">01 · Categorías</span>
+      <h2 class="section-head__title">Para cada <em>quién</em>.</h2>
+    </div>
+    <p class="section-head__desc">
+      Curado por equipo en CDMX y Monterrey. Solo locales que recomendaríamos a nuestra propia mamá.
+    </p>
+  </header>
+
+  <div class="cat-grid">
+    <a href="#experiencias" class="cat" data-cat="brunch">
+      <div class="cat__num">01</div>
+      <h3>Mesa</h3>
+      <p>Brunch, cenas, omakase, cata de vinos. La que sí sabe cocinar.</p>
+      <span class="cat__count">24 experiencias</span>
+    </a>
+    <a href="#experiencias" class="cat" data-cat="wellness">
+      <div class="cat__num">02</div>
+      <h3>Cuerpo</h3>
+      <p>Masajes, sound healing, facial, yoga, rituales que sí descansan.</p>
+      <span class="cat__count">19 experiencias</span>
+    </a>
+    <a href="#experiencias" class="cat" data-cat="bar">
+      <div class="cat__num">03</div>
+      <h3>Sin reglas</h3>
+      <p>Coctelería de autor, mixología en speakeasies, after-hours curados.</p>
+      <span class="cat__count">14 experiencias</span>
+    </a>
+    <a href="#experiencias" class="cat" data-cat="art">
+      <div class="cat__num">04</div>
+      <h3>Manos</h3>
+      <p>Cerámica, arte, taller de joyería. Para los que crean con las manos.</p>
+      <span class="cat__count">11 experiencias</span>
+    </a>
+  </div>
+</section>
+
+<!-- EXPERIENCIAS GRID -->
+<section class="experiences" id="experiencias">
+  <header class="section-head">
+    <div>
+      <span class="section-head__num">02 · Edición</span>
+      <h2 class="section-head__title">Curadas para <em>mamá</em>.</h2>
+    </div>
+    <a href="https://regalapresente.com/collections/landpresente" target="_blank" class="section-head__link" data-magnetic>
+      Ver el catálogo completo
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+    </a>
+  </header>
+
+  <div class="exp-grid">
+    <article class="exp" data-tilt data-cursor="Regalar →">
+      <a class="exp__media" href="https://regalapresente.com/products/sound-healing-for-mom" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/SanandaMothersday.png" alt="Sound Healing" loading="lazy" />
+      </a>
+      <div class="exp__meta">
+        <span class="exp__brand">Sananda · Wellness</span>
+        <h3>Sound Healing for Mom</h3>
+        <div class="exp__bottom"><span class="exp__price">$700<em> MXN</em></span><span class="exp__cta">Regalar →</span></div>
+      </div>
+    </article>
+
+    <article class="exp" data-tilt data-cursor="Regalar →">
+      <a class="exp__media" href="https://regalapresente.com/products/brunch" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/78.png?v=1767841119" alt="Brunch" loading="lazy" />
+      </a>
+      <div class="exp__meta">
+        <span class="exp__brand">Mesa · Brunch</span>
+        <h3>Brunch para dos</h3>
+        <div class="exp__bottom"><span class="exp__price">$600<em> MXN</em></span><span class="exp__cta">Regalar →</span></div>
+      </div>
+    </article>
+
+    <article class="exp" data-tilt data-cursor="Regalar →">
+      <a class="exp__media" href="https://regalapresente.com/products/dubai-lover" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/27_b6c8831a-53ff-4769-886c-e72fc515c0d2.png" alt="Dubai Lover" loading="lazy" />
+      </a>
+      <div class="exp__meta">
+        <span class="exp__brand">Sin reglas · Coctelería</span>
+        <h3>Dubai Lover</h3>
+        <div class="exp__bottom"><span class="exp__price">$240<em> MXN</em></span><span class="exp__cta">Regalar →</span></div>
+      </div>
+    </article>
+
+    <article class="exp" data-tilt data-cursor="Regalar →">
+      <a class="exp__media" href="https://regalapresente.com/products/dubai-for-all" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/28_ed029523-0449-4467-bc6c-b91d7842f3b7.png" alt="Dubai For All" loading="lazy" />
+      </a>
+      <div class="exp__meta">
+        <span class="exp__brand">Sin reglas · Para 4</span>
+        <h3>Dubai For All</h3>
+        <div class="exp__bottom"><span class="exp__price">$760<em> MXN</em></span><span class="exp__cta">Regalar →</span></div>
+      </div>
+    </article>
+
+    <article class="exp" data-tilt data-cursor="Regalar →">
+      <a class="exp__media" href="https://regalapresente.com/products/scoop-duo" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/4_d3f56a7c-ae9d-4a49-881d-f5e9bdbd8d17.png" alt="Scoop Duo" loading="lazy" />
+      </a>
+      <div class="exp__meta">
+        <span class="exp__brand">Scoop · Helado de autor</span>
+        <h3>Scoop Duo</h3>
+        <div class="exp__bottom"><span class="exp__price">$475<em> MXN</em></span><span class="exp__cta">Regalar →</span></div>
+      </div>
+    </article>
+
+    <article class="exp" data-tilt data-cursor="Regalar →">
+      <a class="exp__media" href="https://regalapresente.com/products/to-share" target="_blank">
+        <img src="https://cdn.shopify.com/s/files/1/0519/0893/5837/files/29_3d928894-44a0-4ecf-adb0-18e87a02c8ed.png" alt="To Share" loading="lazy" />
+      </a>
+      <div class="exp__meta">
+        <span class="exp__brand">Mesa · Para compartir</span>
+        <h3>To Share</h3>
+        <div class="exp__bottom"><span class="exp__price">$300<em> MXN</em></span><span class="exp__cta">Regalar →</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- BRANDS MARQUEE -->
+<section class="brands">
+  <div class="brands__head">
+    <span class="section-head__num">03 · Curadas con</span>
+    <h2 class="brands__title">Las marcas <em>que sí</em>.</h2>
+  </div>
+  <div class="marquee">
+    <div class="marquee__row">
+      <span>Sananda</span><i>·</i><span>Scoop</span><i>·</i><span>Glitzi</span><i>·</i><span>Yoga by Vivi</span><i>·</i><span>Ada Spa</span><i>·</i><span>Surfin</span><i>·</i><span>Colmena</span><i>·</i><span>Tipi'Óka</span><i>·</i><span>Don Artemio</span><i>·</i><span>Tone by Gaby</span><i>·</i><span>Harmonyum Healing</span><i>·</i><span>El Contenedor</span><i>·</i><span>VIM</span><i>·</i><span>Deleite</span><i>·</i><span>Fernanda Rivera</span><i>·</i>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="process" id="proceso">
+  <header class="section-head">
+    <div>
+      <span class="section-head__num">04 · Cómo funciona</span>
+      <h2 class="section-head__title">3 pasos. <em>Cero estrés</em>.</h2>
+    </div>
+  </header>
+  <div class="steps">
+    <div class="step">
+      <span class="step__num">01</span>
+      <h3>Eliges la experiencia</h3>
+      <p>Filtras por categoría, ciudad o presupuesto. Te enseñamos solo lo que cabe en lo que tienes.</p>
+    </div>
+    <div class="step">
+      <span class="step__num">02</span>
+      <h3>Personalizas el regalo</h3>
+      <p>Agregas un mensaje, eliges fecha de envío. Llega como tarjeta digital o impresa, tú decides.</p>
+    </div>
+    <div class="step">
+      <span class="step__num">03</span>
+      <h3>Vive la experiencia</h3>
+      <p>El destinatario reserva con un click. La marca aliada lo recibe como VIP. Tú quedas como héroe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta" id="contacto">
+  <div class="cta__inner">
+    <span class="section-head__num cta__num">No sabes qué regalar?</span>
+    <h2 class="cta__title">
+      <span class="line"><span class="word">Te</span> <span class="word">ayudamos</span></span>
+      <span class="line"><span class="word"><em>a elegir</em></span><span class="period">.</span></span>
+    </h2>
+    <p class="cta__sub">Escríbenos y te recomendamos en menos de 30 minutos. Conocemos cada espacio personalmente.</p>
+    <div class="cta__btns">
+      <a href="https://wa.me/5215555555555?text=Hola%2C%20quiero%20recomendaci%C3%B3n%20para%20regalar" target="_blank" class="btn btn--primary" data-magnetic>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Pedir recomendación
+      </a>
+      <a href="https://regalapresente.com/collections/landpresente" target="_blank" class="btn btn--ghost" data-magnetic>Ir al catálogo</a>
+    </div>
+    <div class="cta__contact">
+      <span><em>EMAIL</em>servicios@regalapresente.com</span>
+      <span><em>INSTAGRAM</em>@presente.mx</span>
+      <span><em>BASE</em>CDMX · Monterrey</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer__row">
+    <span class="footer__brand">Presente.</span>
+    <span class="footer__copy">© 2026 Regala Presente · Hecho en México con cuidado</span>
+    <a href="#" class="footer__top">↑ Top</a>
+  </div>
+</footer>
+
+<!-- LIBS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
