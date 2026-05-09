@@ -209,6 +209,33 @@ document.querySelectorAll('[data-tilt]').forEach(card => {
   });
 });
 
+/* === MOMENTS PARALLAX === */
+gsap.utils.toArray('.moment').forEach(item => {
+  const speed = parseFloat(item.dataset.speed || 1);
+  const img = item.querySelector('img');
+  if (!img) return;
+  gsap.fromTo(img,
+    { y: -30 * speed },
+    {
+      y: 30 * speed,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: item,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 1,
+      },
+    }
+  );
+});
+
+gsap.utils.toArray('.moment').forEach(item => {
+  gsap.from(item, {
+    opacity: 0, y: 40, duration: 1, ease: 'expo.out',
+    scrollTrigger: { trigger: item, start: 'top 90%' },
+  });
+});
+
 /* === MARQUEE INFINITO === */
 const marqueeRow = document.querySelector('.marquee__row');
 if (marqueeRow) {
